@@ -1,0 +1,6 @@
+#!/bin/bash
+#Opens e.ggtimer.com/xmin where x = number of minutes
+#Call eggtimer if you don't want to see a Firefox error
+#read -p "" TIME
+TIME=${1:-5}
+xdg-open http://e.ggtimer.com/"$TIME"min

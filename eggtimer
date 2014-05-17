@@ -1,0 +1,8 @@
+#!/bin/bash
+#call eggtimerx and deletes annoying error message
+declare -i TIME=${1:-0} #If User does not provide integer (time) defaults to 0
+while ! (( "$TIME" > 0 ))
+do    
+    read -p "Enter Time:"  TIME
+done
+/home/anthony/bin/xfile/eggtimerx "$TIME" > /dev/null 2>&1
