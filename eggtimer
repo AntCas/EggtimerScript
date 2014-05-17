@@ -5,4 +5,4 @@ while ! (( "$TIME" > 0 ))
 do    
     read -p "Enter Time:"  TIME
 done
-/home/anthony/bin/xfile/eggtimerx "$TIME" > /dev/null 2>&1
+/home/user/bin/xfile/eggtimerx "$TIME" > /dev/null 2>&1
